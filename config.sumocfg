@@ -1,0 +1,41 @@
+<configuration>
+
+ <input>
+    <net-file value="red_transporte.net.xml"/>
+    <route-files value="rutas.xml"/>
+    <additional-files value="detectores.add.xml,zat_poly.xml"/>  <!-- Incluir zat_poly.xml -->
+ </input>
+
+ <!-- Opciones de simulación -->
+ <time>
+ <!-- Inicio de simulacion en segundos (12:00 a 13:00) -->
+    <begin value="43200"/>
+    <end value="46800"/>
+    <step-length value="1"/>
+ </time>
+
+ <processing>
+    <collision.action value="warn"/>
+    <intermodal-collision.action value="warn"/>
+ </processing>
+
+ <!-- Algoritmo de Ruteo -->
+ <routing>
+    <routing-algorithm value="dijkstra"/>
+ </routing>
+
+ <!-- Resultados a exportar -->
+ <output>
+    <!-- <queue-output value="queue_out.xml"/> -->
+    <tripinfo-output value="tripinfo_out.xml"/>
+    <edgedata-output value="edgedata_out.xml"/>
+    <fcd-output value="fcd_out.xml"/>
+ </output>
+
+ <!-- Reporte de errores -->
+ <report>
+    <log value="sumo.log"/>
+    <error-log value="sumo.error.log"/>
+ </report>
+
+</configuration>

@@ -1,0 +1,10 @@
+<additional>
+    
+    <vType id="automovil" vClass="private" accel="4.399945173772762" decel="7.647282110674869" sigma="0.8324940172767634" length="4.5" minGap="2.2297135201048697" maxSpeed="13.9" tau="1.5464983379879267" carFollowModel="Krauss" laneChangeModel="LC2013" lcStrategic="0.7266860775682097" lcCooperative="0.5469481303630512" lcSpeedGain="0.53607610457351" lcKeepRight="0.3" color="white" />
+  
+    
+    <vType id="motocicleta" vClass="motorcycle" accel="4.2336154101060846" decel="5.3306407921561325" sigma="0.10599999999999994" length="2.5" minGap="0.55" maxSpeed="16.7" tau="0.4435765829981793" carFollowModel="Krauss" laneChangeModel="LC2013" lcStrategic="0.8" lcCooperative="0.9" lcSpeedGain="0.9" lcKeepRight="0.1" color="red" />
+
+    
+    <vType id="camion" vClass="truck" accel="2.0" decel="5.0" sigma="0.5" length="11.0" minGap="5.0" maxSpeed="10.0" tau="1.6924648909186686" carFollowModel="Krauss" laneChangeModel="LC2013" lcStrategic="0.23052142585389673" lcCooperative="0.5108533071007869" lcSpeedGain="0.062185906276433896" lcKeepRight="0.7" color="blue" />
+</additional>
